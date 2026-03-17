@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Spring Boot (mvn spring-boot:run)",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.wealth.portfolio.WealthPortfolioApplication",
+      "projectName": "wealth-portfolio-api",
+      "preLaunchTask": "Spring Boot Run"
+    }
+  ]
+}
