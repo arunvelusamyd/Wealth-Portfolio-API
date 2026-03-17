@@ -11,7 +11,7 @@ A Spring Boot REST API that serves portfolio data for **Stocks** and **Unit Trus
 | Java           | 17      |
 | Spring Boot    | 3.3.4   |
 | Maven          | 3.x     |
-| Embedded Server| Tomcat (port 8080) |
+| Embedded Server| Tomcat (port 8010) |
 
 ---
 
@@ -66,7 +66,7 @@ mvn clean package
 java -jar target/wealth-portfolio-api-1.0.0.jar
 ```
 
-The server starts on **http://localhost:8080**
+The server starts on **http://localhost:8010**
 
 ---
 
@@ -82,7 +82,7 @@ GET /api/portfolio/stocks
 
 **Example:**
 ```bash
-curl -s http://localhost:8080/api/portfolio/stocks
+curl -s http://localhost:8010/api/portfolio/stocks
 ```
 
 **Sample Response (truncated):**
@@ -118,7 +118,7 @@ GET /api/portfolio/unit-trust
 
 **Example:**
 ```bash
-curl -s http://localhost:8080/api/portfolio/unit-trust
+curl -s http://localhost:8010/api/portfolio/unit-trust
 ```
 
 **Sample Response (truncated):**
@@ -145,10 +145,10 @@ Run both endpoints with a single command:
 
 ```bash
 # Stocks
-curl -s http://localhost:8080/api/portfolio/stocks | python3 -m json.tool
+curl -s http://localhost:8010/api/portfolio/stocks | python3 -m json.tool
 
 # Unit Trust
-curl -s http://localhost:8080/api/portfolio/unit-trust | python3 -m json.tool
+curl -s http://localhost:8010/api/portfolio/unit-trust | python3 -m json.tool
 ```
 
 ---
