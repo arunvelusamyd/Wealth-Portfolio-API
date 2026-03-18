@@ -22,6 +22,7 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/portfolio/**").authenticated()
+                .requestMatchers("/api/chat").authenticated()
                 .anyRequest().denyAll()
             )
             .oauth2ResourceServer(oauth2 -> oauth2
