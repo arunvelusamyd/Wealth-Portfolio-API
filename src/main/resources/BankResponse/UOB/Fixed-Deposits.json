@@ -1,0 +1,31 @@
+{
+    "fixedDeposit": {
+        "accounts": [
+            {
+                "accountId": "UOB-FD-456789",
+                "accountType": "01",
+                "availableBalance": {
+                    "Currency": "SGD",
+                    "balance": "0.00",
+                    "displayBalance": 0.0
+                },
+                "principalBalance": {
+                    "Currency": "SGD",
+                    "balance": "50000.00",
+                    "displayBalance": 50000.00
+                },
+                "displayAccountNumber": "UOB-456-789",
+                "accountNickname": "UOB Fixed Deposit",
+                "masterAccountFlag": false,
+                "currency": "SGD",
+                "interestRate": 3.45,
+                "maturityDate": "2026-03-15",
+                "tenorMonths": 6,
+                "cpfIndicator": false,
+                "modeOfOperationCode": "0001",
+                "staffFlag": "N"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

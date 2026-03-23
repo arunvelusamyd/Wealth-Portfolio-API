@@ -1,0 +1,530 @@
+{
+    "SRSDetails": [
+        {
+            "assetClass": "BO",
+            "totalCost": {
+                "currency": "1500.0",
+                "value": "SGD"
+            },
+            "totalValue": {
+                "currency": "1500.0",
+                "value": "SGD"
+            },
+            "unRealizedGain": {
+                "currency": "0.0",
+                "value": "SGD"
+            },
+            "holdings": [
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "1.000000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "1500.0"
+                    },
+                    "totalCost": {
+                        "currency": "1500.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "prodCode": "GX24100H",
+                    "productName": "SSB GX24100H 341001",
+                    "productShortName": "GX24100H L",
+                    "dbsISIN": "SGXZ87291118",
+                    "currentHoldingUnits": "1500.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                }
+            ]
+        },
+        {
+            "assetClass": "EQ",
+            "totalCost": {
+                "currency": "2741.58",
+                "value": "SGD"
+            },
+            "totalValue": {
+                "currency": "2809.37",
+                "value": "SGD"
+            },
+            "unRealizedGain": {
+                "currency": "67.79",
+                "value": "SGD"
+            },
+            "holdings": [
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.993000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2023-08-22T00:00:00.000Z",
+                    "prodCode": "BS24118Z",
+                    "productName": "TB BS24118Z 250318",
+                    "productShortName": "BS24118Z L",
+                    "dbsISIN": "SGXZ71864045DEL",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.996000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2024-05-09T00:00:00.000Z",
+                    "prodCode": "BS25107W",
+                    "productName": "TB BS25107W 251014",
+                    "productShortName": "BS25107W L",
+                    "dbsISIN": "SGXZ85227049",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.995000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2023-12-14T00:00:00.000Z",
+                    "prodCode": "BY24102W",
+                    "productName": "TB BY24102W 250729",
+                    "productShortName": "BY24102W L",
+                    "dbsISIN": "SGXZ31182504DEL",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.996000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2024-07-18T00:00:00.000Z",
+                    "prodCode": "BS25112X",
+                    "productName": "TB BS25112X 251223",
+                    "productShortName": "BS25112X L",
+                    "dbsISIN": "SGXZ71255038",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.271000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "1389.79"
+                    },
+                    "totalCost": {
+                        "currency": "1358.24",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "31.55"
+                    },
+                    "priceDate": "2024-10-31T00:00:00.000Z",
+                    "prodCode": "BS26101E",
+                    "productName": "TB BS26101E 260721",
+                    "productShortName": "BS26101E L",
+                    "dbsISIN": "SGXZ15837941",
+                    "currentHoldingUnits": "14.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "2.32"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.996000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2024-07-03T00:00:00.000Z",
+                    "prodCode": "BS25111T",
+                    "productName": "TB BS25111T 251209",
+                    "productShortName": "BS25111T L",
+                    "dbsISIN": "SGXZ99133456",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.992000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2023-09-04T00:00:00.000Z",
+                    "prodCode": "BS24119S",
+                    "productName": "TB BS24119S 250401",
+                    "productShortName": "BS24119S L",
+                    "dbsISIN": "SGXZ23627573DEL",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.182000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "1419.58"
+                    },
+                    "totalCost": {
+                        "currency": "1383.34",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "36.24"
+                    },
+                    "priceDate": "2024-10-31T00:00:00.000Z",
+                    "prodCode": "BS26102F",
+                    "productName": "TB BS26102F 260804",
+                    "productShortName": "BS26102F L",
+                    "dbsISIN": "SGXZ42579045",
+                    "currentHoldingUnits": "14.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "2.62"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "99.986000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2024-06-16T00:00:00.000Z",
+                    "prodCode": "BS25110H",
+                    "productName": "TB BS25110H 251125",
+                    "productShortName": "BS25110H L",
+                    "dbsISIN": "SGXZ95105383",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                }
+            ]
+        },
+        {
+            "assetClass": "MF",
+            "totalCost": {
+                "currency": "48750.0",
+                "value": "SGD"
+            },
+            "totalValue": {
+                "currency": "54831.29",
+                "value": "SGD"
+            },
+            "unRealizedGain": {
+                "currency": "6081.29",
+                "value": "SGD"
+            },
+            "holdings": [
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "0.836000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "9284.47"
+                    },
+                    "totalCost": {
+                        "currency": "8500.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "784.47"
+                    },
+                    "priceDate": "2024-10-29T00:00:00.000Z",
+                    "prodCode": "UR1445UL",
+                    "productName": "SCHRODER ASIA MORE+ S$ D DIS",
+                    "productShortName": "UR1445 U",
+                    "dbsISIN": "SGXZ74886938",
+                    "currentHoldingUnits": "11106.96",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "9.23"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "8.970600"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "totalCost": {
+                        "currency": "0.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    },
+                    "priceDate": "2024-10-30T00:00:00.000Z",
+                    "prodCode": "UR1169UL",
+                    "productName": "ALLZ GLB FLT R NOTES PLUS H2S$",
+                    "productShortName": "UR1169   U",
+                    "dbsISIN": "LU1846563374",
+                    "currentHoldingUnits": "0.0",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "0.0"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "1.843000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "8293.19"
+                    },
+                    "totalCost": {
+                        "currency": "7500.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "793.19"
+                    },
+                    "priceDate": "2024-10-30T00:00:00.000Z",
+                    "prodCode": "UR0857UL",
+                    "productName": "FID EMERGING MKT FD A SGD",
+                    "productShortName": "UR0857   U",
+                    "dbsISIN": "LU0251143458",
+                    "currentHoldingUnits": "4499.83",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "10.58"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "31.420000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "17469.12"
+                    },
+                    "totalCost": {
+                        "currency": "15000.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "2469.12"
+                    },
+                    "priceDate": "2024-10-30T00:00:00.000Z",
+                    "prodCode": "UR1130UL",
+                    "productName": "FRK TECH A (ACC) S$-H1",
+                    "productShortName": "UR1130 U",
+                    "dbsISIN": "LU1803068979",
+                    "currentHoldingUnits": "555.97",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "16.46"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "2.174000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "5283.82"
+                    },
+                    "totalCost": {
+                        "currency": "4750.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "533.82"
+                    },
+                    "priceDate": "2024-10-30T00:00:00.000Z",
+                    "prodCode": "UR0711UL",
+                    "productName": "FID GLB DIV FUND A-MINCOME SGD",
+                    "productShortName": "UR0711   U",
+                    "dbsISIN": "LU0731783394",
+                    "currentHoldingUnits": "2430.09",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "11.24"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "1.073000"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "7831.52"
+                    },
+                    "totalCost": {
+                        "currency": "7500.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "331.52"
+                    },
+                    "priceDate": "2024-10-29T00:00:00.000Z",
+                    "prodCode": "UR1444UL",
+                    "productName": "SCHRODER ASIA MORE+ SGD A DIS",
+                    "productShortName": "UR1444 U",
+                    "dbsISIN": "SGXZ46621439",
+                    "currentHoldingUnits": "7299.18",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "4.42"
+                    }
+                },
+                {
+                    "marketPrice": {
+                        "currency": "SGD",
+                        "value": "1.724600"
+                    },
+                    "marketVal": {
+                        "currency": "SGD",
+                        "value": "6669.17"
+                    },
+                    "totalCost": {
+                        "currency": "5500.0",
+                        "value": "SGD"
+                    },
+                    "unrealGainLoss": {
+                        "currency": "SGD",
+                        "value": "1169.17"
+                    },
+                    "priceDate": "2024-10-30T00:00:00.000Z",
+                    "prodCode": "U00276UL",
+                    "productName": "FSSA DIV ADVANTAGE A(QDIST) S$",
+                    "productShortName": "U00276   U",
+                    "dbsISIN": "SG9999002083",
+                    "currentHoldingUnits": "3866.42",
+                    "unrealGainLossPercent": {
+                        "currency": "SGD",
+                        "value": "21.26"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "casa": {
+        "accounts": [
+            {
+                "accountId": "5010987654321",
+                "accountName": "Sample Account Holder",
+                "accountNickname": "OCBC 360 Account",
+                "imageName": "",
+                "accountStatus": "Active",
+                "accountFrozenIndicator": "false",
+                "schemeCode": "3360",
+                "schemeName": "OCBC 360 Account",
+                "accountType": "01",
+                "productCode": "0360",
+                "productCodeDescription": "OCBC 360 Account",
+                "accountOpenedDate": {
+                    "value": "2016-03-14",
+                    "format": "yyyy-MM-dd"
+                },
+                "availableBalance": {
+                    "Currency": "SGD",
+                    "balance": "28650.40",
+                    "domesticCurrencyBalance": "28650.40",
+                    "displayDomesticCurrencyBalance": "28,650.40",
+                    "displayBalance": 28650.40
+                },
+                "baseCurrency": "SGD",
+                "ledgerBalance": {
+                    "Currency": "SGD",
+                    "balance": "28650.40",
+                    "displayBalance": 28650.40
+                },
+                "overdraftLimit": {
+                    "Currency": "SGD",
+                    "balance": "0.00",
+                    "displayBalance": 0.0
+                },
+                "interestRate": 4.05,
+                "multiCurrencyAccountFlag": false,
+                "subProductCode": "36",
+                "jointIndicator": false,
+                "accountSignal": "000000000000000",
+                "displayAccountNumber": "501-098-765-4"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

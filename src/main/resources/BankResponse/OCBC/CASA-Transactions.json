@@ -1,0 +1,654 @@
+{
+    "pageInfo": {
+        "fetchedRecords": 0,
+        "nextCursor": null,
+        "previousCursor": null,
+        "totalRecords": 10,
+        "hasMoreTransactions": "N",
+        "endDate": {
+            "value": "2024-11-08",
+            "format": "yyyy-MM-dd"
+        }
+    },
+    "transactions": [
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "7500.00",
+                "displayBalance": 7500.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Salary Credit",
+                "language_code": null
+            },
+            "particular": {
+                "code": "SAL",
+                "description": [
+                    {
+                        "textValue": "Salary Credit",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "NOV2024 SALARY",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-07T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "SAL",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_ONL2024-11-070900000000015000.00",
+            "transactionCode": "SAL",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "ABC CORPORATION PTE LTD"
+                },
+                {
+                    "transactionDetails": "OCBC20241107SAL0001"
+                },
+                {
+                    "transactionDetails": "NOV2024 SALARY"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "1250.00",
+                "displayBalance": 1250.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Credit Card Payment",
+                "language_code": null
+            },
+            "particular": {
+                "code": "CCP",
+                "description": [
+                    {
+                        "textValue": "Credit Card Payment",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OCBC TITANIUM CARD PAYMENT",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-05T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "CCP",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_ONL2024-11-050840210000001250.00",
+            "transactionCode": "CCP",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "OCBC TITANIUM XXXX-4321"
+                },
+                {
+                    "transactionDetails": "OCBC20241105CCP0001"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "500.00",
+                "displayBalance": 500.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "PayNow Transfer",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ICT",
+                "description": [
+                    {
+                        "textValue": "PayNow Transfer",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OTHR",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-02T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ICT",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_ONL2024-11-021100150000001500.00",
+            "transactionCode": "ICT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SG24110200501098765001"
+                },
+                {
+                    "transactionDetails": "20241102OCBCSGSGXXX0012345"
+                },
+                {
+                    "transactionDetails": "OTHR"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "300.00",
+                "displayBalance": 300.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "ATM Cash Withdrawal",
+                "language_code": null
+            },
+            "particular": {
+                "code": "AWL",
+                "description": [
+                    {
+                        "textValue": "ATM Cash Withdrawal",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": null,
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-30T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "AWL",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_ONL2024-10-301345300000001300.00",
+            "transactionCode": "AWL",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "654321,RAFFLES PLACE BR"
+                },
+                {
+                    "transactionDetails": ""
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "2000.00",
+                "displayBalance": 2000.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Bank Transfer Credit",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ICT",
+                "description": [
+                    {
+                        "textValue": "Bank Transfer Credit",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OTHR",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-25T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ICT",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_ONL2024-10-251547220000012000.00",
+            "transactionCode": "ICT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SG24102500501098765002"
+                },
+                {
+                    "transactionDetails": "20241025OCBCSGSGXXX0067890"
+                },
+                {
+                    "transactionDetails": "OTHR"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "178.50",
+                "displayBalance": 178.50,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Utilities GIRO",
+                "language_code": null
+            },
+            "particular": {
+                "code": "GRO",
+                "description": [
+                    {
+                        "textValue": "Utilities GIRO",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "SP SERVICES PTE LTD",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-22T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "GRO",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_EOD2024-10-2299999940017178.50",
+            "transactionCode": "GRO",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SP SERVICES PTE LTD"
+                },
+                {
+                    "transactionDetails": "OCT2024 UTILITIES"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "125.90",
+                "displayBalance": 125.90,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Online Shopping",
+                "language_code": null
+            },
+            "particular": {
+                "code": "UMC-S",
+                "description": [
+                    {
+                        "textValue": "Online Shopping",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "000009876543210",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-18T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "UMC-S",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_EOD2024-10-18999999400172125.90",
+            "transactionCode": "UMC-S",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SHOPEE SG              SG SGP 16OCT"
+                },
+                {
+                    "transactionDetails": "5610-2345-6789-0123"
+                },
+                {
+                    "transactionDetails": "000009876543210"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "36.90",
+                "displayBalance": 36.90,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Phone Bill",
+                "language_code": null
+            },
+            "particular": {
+                "code": "GRO",
+                "description": [
+                    {
+                        "textValue": "Phone Bill",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "STARHUB MOBILE",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-14T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "GRO",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_EOD2024-10-149999994001736.90",
+            "transactionCode": "GRO",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "STARHUB MOBILE PTE LTD"
+                },
+                {
+                    "transactionDetails": "OCT2024 MOBILE BILL"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "96.02",
+                "displayBalance": 96.02,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Interest Credit",
+                "language_code": null
+            },
+            "particular": {
+                "code": "INT",
+                "description": [
+                    {
+                        "textValue": "Interest Credit",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "SEP2024 INTEREST",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-05T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "INT",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_EOD2024-10-0599999940017196.02",
+            "transactionCode": "INT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "OCBC 360 ACCOUNT INTEREST"
+                },
+                {
+                    "transactionDetails": "SEP2024"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "5010987654321",
+            "amount": {
+                "currency": "SGD",
+                "balance": "1500.00",
+                "displayBalance": 1500.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "description": {
+                "textValue": "GIRO Payment",
+                "language_code": null
+            },
+            "particular": {
+                "code": "GRO",
+                "description": [
+                    {
+                        "textValue": "GIRO Payment",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "HDB MORTGAGE",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-01T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "GRO",
+            "transactionsequencenumber": "DQ_OCBC5010987654321_EOD2024-10-0199999940017181500.00",
+            "transactionCode": "GRO",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "HDB MORTGAGE LOAN"
+                },
+                {
+                    "transactionDetails": "OCT2024 INSTALMENT"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        }
+    ]
+}

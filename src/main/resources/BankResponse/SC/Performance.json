@@ -1,0 +1,38 @@
+{
+  "history": [
+    { "label": "Feb 21", "value": 215200 },
+    { "label": "Feb 22", "value": 217300 },
+    { "label": "Feb 23", "value": 216100 },
+    { "label": "Feb 24", "value": 218500 },
+    { "label": "Feb 25", "value": 220100 },
+    { "label": "Feb 26", "value": 218900 },
+    { "label": "Feb 27", "value": 221300 },
+    { "label": "Feb 28", "value": 219800 },
+    { "label": "Mar 1",  "value": 222500 },
+    { "label": "Mar 2",  "value": 224100 },
+    { "label": "Mar 3",  "value": 222800 },
+    { "label": "Mar 4",  "value": 225400 },
+    { "label": "Mar 5",  "value": 226900 },
+    { "label": "Mar 6",  "value": 225100 },
+    { "label": "Mar 7",  "value": 228300 },
+    { "label": "Mar 8",  "value": 229700 },
+    { "label": "Mar 9",  "value": 228100 },
+    { "label": "Mar 10", "value": 231500 },
+    { "label": "Mar 11", "value": 233200 },
+    { "label": "Mar 12", "value": 231800 },
+    { "label": "Mar 13", "value": 234600 },
+    { "label": "Mar 14", "value": 236100 },
+    { "label": "Mar 15", "value": 234500 },
+    { "label": "Mar 16", "value": 237300 },
+    { "label": "Mar 17", "value": 238900 },
+    { "label": "Mar 18", "value": 237200 },
+    { "label": "Mar 19", "value": 239800 },
+    { "label": "Mar 20", "value": 241200 },
+    { "label": "Mar 21", "value": 239700 },
+    { "label": "Mar 22", "value": 241500 }
+  ],
+  "monthlyChanges": {
+    "stocks": 15.2,
+    "unitTrusts": 9.8
+  }
+}

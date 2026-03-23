@@ -1,0 +1,655 @@
+{
+    "pageInfo": {
+        "fetchedRecords": 0,
+        "nextCursor": null,
+        "previousCursor": null,
+        "totalRecords": 10,
+        "hasMoreTransactions": "N",
+        "endDate": {
+            "value": "2024-11-08",
+            "format": "yyyy-MM-dd"
+        }
+    },
+    "transactions": [
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "5000.00",
+                "displayBalance": 5000.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Salary Credit",
+                "language_code": null
+            },
+            "particular": {
+                "code": "SAL",
+                "description": [
+                    {
+                        "textValue": "Salary Credit",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "NOV2024 SALARY",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-08T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "SAL",
+            "transactionsequencenumber": "DQ_UOB3010123456789_ONL2024-11-0809000000000015000.00",
+            "transactionCode": "SAL",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "EMPLOYER PTE LTD"
+                },
+                {
+                    "transactionDetails": "UOB20241108SAL0001"
+                },
+                {
+                    "transactionDetails": "NOV2024 SALARY"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "850.00",
+                "displayBalance": 850.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Credit Card Payment",
+                "language_code": null
+            },
+            "particular": {
+                "code": "CCP",
+                "description": [
+                    {
+                        "textValue": "Credit Card Payment",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "UOB ONE CARD PAYMENT",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-05T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "CCP",
+            "transactionsequencenumber": "DQ_UOB3010123456789_ONL2024-11-050840210000001850.00",
+            "transactionCode": "CCP",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "UOB ONE CARD XXXX-9012"
+                },
+                {
+                    "transactionDetails": "UOB20241105CCP0002"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "350.00",
+                "displayBalance": 350.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "PayNow Transfer",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ICT",
+                "description": [
+                    {
+                        "textValue": "PayNow Transfer",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OTHR",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-03T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ICT",
+            "transactionsequencenumber": "DQ_UOB3010123456789_ONL2024-11-031100150000001350.00",
+            "transactionCode": "ICT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SG24110300301012345000"
+                },
+                {
+                    "transactionDetails": "20241103UOVBSGSG1RT0001234"
+                },
+                {
+                    "transactionDetails": "OTHR"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "250.00",
+                "displayBalance": 250.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "ATM Cash Withdrawal",
+                "language_code": null
+            },
+            "particular": {
+                "code": "AWL",
+                "description": [
+                    {
+                        "textValue": "ATM Cash Withdrawal",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": null,
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-01T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "AWL",
+            "transactionsequencenumber": "DQ_UOB3010123456789_ONL2024-11-011345300000001250.00",
+            "transactionCode": "AWL",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "789012,ORCHARD RD BR"
+                },
+                {
+                    "transactionDetails": ""
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "1200.00",
+                "displayBalance": 1200.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Bank Transfer Credit",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ICT",
+                "description": [
+                    {
+                        "textValue": "Bank Transfer Credit",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OTHR",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-28T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ICT",
+            "transactionsequencenumber": "DQ_UOB3010123456789_ONL2024-10-281547220000021200.00",
+            "transactionCode": "ICT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SG24102800301012345001"
+                },
+                {
+                    "transactionDetails": "20241028UOVBSGSG1RT0005678"
+                },
+                {
+                    "transactionDetails": "OTHR"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "156.80",
+                "displayBalance": 156.80,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Utilities GIRO",
+                "language_code": null
+            },
+            "particular": {
+                "code": "GRO",
+                "description": [
+                    {
+                        "textValue": "Utilities GIRO",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "SP SERVICES PTE LTD",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-25T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "GRO",
+            "transactionsequencenumber": "DQ_UOB3010123456789_EOD2024-10-2599999940017156.80",
+            "transactionCode": "GRO",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SP SERVICES PTE LTD"
+                },
+                {
+                    "transactionDetails": "OCT2024 UTILITIES"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "89.50",
+                "displayBalance": 89.50,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Online Shopping",
+                "language_code": null
+            },
+            "particular": {
+                "code": "UMC-S",
+                "description": [
+                    {
+                        "textValue": "Online Shopping",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "000007890124567",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-20T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "UMC-S",
+            "transactionsequencenumber": "DQ_UOB3010123456789_EOD2024-10-2099999940017289.50",
+            "transactionCode": "UMC-S",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "LAZADA SG             SG SGP 18OCT"
+                },
+                {
+                    "transactionDetails": "4512-6789-0123-4567"
+                },
+                {
+                    "transactionDetails": "000007890124567"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "42.30",
+                "displayBalance": 42.30,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Phone Bill",
+                "language_code": null
+            },
+            "particular": {
+                "code": "GRO",
+                "description": [
+                    {
+                        "textValue": "Phone Bill",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "SINGTEL MOBILE",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-15T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "GRO",
+            "transactionsequencenumber": "DQ_UOB3010123456789_EOD2024-10-1599999940017342.30",
+            "transactionCode": "GRO",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SINGTEL MOBILE PTE LTD"
+                },
+                {
+                    "transactionDetails": "OCT2024 MOBILE BILL"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "15.24",
+                "displayBalance": 15.24,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Interest Credit",
+                "language_code": null
+            },
+            "particular": {
+                "code": "INT",
+                "description": [
+                    {
+                        "textValue": "Interest Credit",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "SEP2024 INTEREST",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-05T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "INT",
+            "transactionsequencenumber": "DQ_UOB3010123456789_EOD2024-10-0599999940017115.24",
+            "transactionCode": "INT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "UOB ONE ACCOUNT INTEREST"
+                },
+                {
+                    "transactionDetails": "SEP2024"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "3010123456789",
+            "amount": {
+                "currency": "SGD",
+                "balance": "680.00",
+                "displayBalance": 680.00,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "GIRO Payment",
+                "language_code": null
+            },
+            "particular": {
+                "code": "GRO",
+                "description": [
+                    {
+                        "textValue": "GIRO Payment",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "HDB MORTGAGE",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-01T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "GRO",
+            "transactionsequencenumber": "DQ_UOB3010123456789_EOD2024-10-0199999940017680.00",
+            "transactionCode": "GRO",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "HDB MORTGAGE LOAN"
+                },
+                {
+                    "transactionDetails": "OCT2024 INSTALMENT"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        }
+    ]
+}

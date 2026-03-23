@@ -1,0 +1,527 @@
+{
+    "pageInfo": {
+        "fetchedRecords": 0,
+        "nextCursor": null,
+        "previousCursor": null,
+        "totalRecords": 8,
+        "hasMoreTransactions": "N",
+        "endDate": {
+            "value": "2024-11-08",
+            "format": "yyyy-MM-dd"
+        }
+    },
+    "transactions": [
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "23.41",
+                "displayBalance": 23.41,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Debit Card Transaction",
+                "language_code": null
+            },
+            "particular": {
+                "code": "UMC-S",
+                "description": [
+                    {
+                        "textValue": "Debit Card Transaction",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "000005847291036",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-03T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "UMC-S",
+            "transactionsequencenumber": "DQ_POSB093857246100583_EOD2024-11-0499999940017423.41",
+            "transactionCode": "UMC-S",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "GROCERY STORE           SI SGP 14OCT"
+                },
+                {
+                    "transactionDetails": "3819-5047-6372-2941"
+                },
+                {
+                    "transactionDetails": "000005847291036"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "280.00",
+                "displayBalance": 280.0,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Cash Withdrawal",
+                "language_code": null
+            },
+            "particular": {
+                "code": "AWL",
+                "description": [
+                    {
+                        "textValue": "Cash Withdrawal",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": null,
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-03T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "AWL",
+            "transactionsequencenumber": "DQ_POSB093857246100582_ONL2024-11-030822540000008280.00",
+            "transactionCode": "AWL",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "63722941,CITY CENTRE DL"
+                },
+                {
+                    "transactionDetails": ""
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "1847.63",
+                "displayBalance": 1847.63,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "FAST / PayNow Transfer",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ICT",
+                "description": [
+                    {
+                        "textValue": "FAST / PayNow Transfer",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OTHR",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-11-02T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ICT",
+            "transactionsequencenumber": "DQ_POSB093857246100582_ONL2024-11-0213322200000011847.63",
+            "transactionCode": "ICT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SG24110200935872410000"
+                },
+                {
+                    "transactionDetails": "20241102SCBLSG22BRT0073948"
+                },
+                {
+                    "transactionDetails": "OTHR"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "512.34",
+                "displayBalance": 512.34,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Debit Card Transaction",
+                "language_code": null
+            },
+            "particular": {
+                "code": "UMC-S",
+                "description": [
+                    {
+                        "textValue": "Debit Card Transaction",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "000003619472058",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-30T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "UMC-S",
+            "transactionsequencenumber": "DQ_POSB093857246100583_EOD2024-10-309999994001742512.34",
+            "transactionCode": "UMC-S",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "RETAIL STORE            SI SGP 28OCT"
+                },
+                {
+                    "transactionDetails": "3819-5047-6372-2941"
+                },
+                {
+                    "transactionDetails": "000003619472058"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "120.00",
+                "displayBalance": 120.0,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Cash Withdrawal",
+                "language_code": null
+            },
+            "particular": {
+                "code": "AWL",
+                "description": [
+                    {
+                        "textValue": "Cash Withdrawal",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": null,
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-29T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "AWL",
+            "transactionsequencenumber": "DQ_POSB093857246100582_ONL2024-10-291302220000001120.00",
+            "transactionCode": "AWL",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "63722941,CITY CENTRE DL"
+                },
+                {
+                    "transactionDetails": ""
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "18.92",
+                "displayBalance": 18.92,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Debit Card Transaction",
+                "language_code": null
+            },
+            "particular": {
+                "code": "UMC-S",
+                "description": [
+                    {
+                        "textValue": "Debit Card Transaction",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "000004728193605",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-28T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "UMC-S",
+            "transactionsequencenumber": "DQ_POSB093857246100583_EOD2024-10-2899999940017418.92",
+            "transactionCode": "UMC-S",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "CONVENIENCE STORE       SI SGP 05OCT"
+                },
+                {
+                    "transactionDetails": "3819-5047-6372-2941"
+                },
+                {
+                    "transactionDetails": "000004728193605"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "4150.00",
+                "displayBalance": 4150.0,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "D",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "Funds Transfer",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ITR",
+                "description": [
+                    {
+                        "textValue": "Funds Transfer",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": null,
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-22T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ITR",
+            "transactionsequencenumber": "DQ_POSB093857246100582_ONL2024-10-2217565000000024150.00",
+            "transactionCode": "ITR",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "FT241022MB97234185"
+                },
+                {
+                    "transactionDetails": "041-93827-6:IB"
+                },
+                {
+                    "transactionDetails": ""
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        },
+        {
+            "accountNumber": "09385724610058",
+            "amount": {
+                "currency": "SGD",
+                "balance": "3750.00",
+                "displayBalance": 3750.0,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "channelId": null,
+            "side": "C",
+            "FxExchangeRate": null,
+            "customerEnrichedDescription": null,
+            "description": {
+                "textValue": "FAST / PayNow Transfer",
+                "language_code": null
+            },
+            "particular": {
+                "code": "ICT",
+                "description": [
+                    {
+                        "textValue": "FAST / PayNow Transfer",
+                        "language_code": null
+                    }
+                ]
+            },
+            "postedDate": null,
+            "remarks": "OTHR",
+            "runningBalance": null,
+            "transactionDate": {
+                "value": "2024-10-22T00:00:00+0800",
+                "format": "yyyy-MM-dd'T'HH:mm:ssZ"
+            },
+            "transactionReferenceNumber": "ICT",
+            "transactionsequencenumber": "DQ_POSB093857246100582_ONL2024-10-2217543700000013750.00",
+            "transactionCode": "ICT",
+            "transactionReferenceDetails": [
+                {
+                    "transactionDetails": "SG24102200724819530000"
+                },
+                {
+                    "transactionDetails": "20241022SCBLSG22BRT0296143"
+                },
+                {
+                    "transactionDetails": "OTHR"
+                }
+            ],
+            "transactionStatus": null,
+            "valueDate": null,
+            "originalTransactionAmount": {
+                "currency": null,
+                "balance": null,
+                "displayBalance": null,
+                "domesticCurrencyBalance ": null,
+                "displayDomesticCurrencyBalance": null
+            },
+            "paymentMode": null,
+            "categoryCode": null,
+            "categoryName": null,
+            "declineCode": null,
+            "declineCodeDescription": null,
+            "approvalCode": null,
+            "cardDetail": null
+        }
+    ]
+}

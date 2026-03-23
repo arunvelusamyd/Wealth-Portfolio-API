@@ -1,0 +1,23 @@
+{
+    "investment": {
+        "accounts": [
+            {
+                "productType": "UNIT_TRUST",
+                "investmentId": "IN000751826",
+                "marketValue": {
+                    "Currency": "SGD",
+                    "balance": "0",
+                    "displayBalance": 0.0
+                },
+                "displayAccountNumber": "IN000751826",
+                "accountNickname": "",
+                "productCode": "0283",
+                "productCodeDescription": "UT",
+                "jointProductIndicator": false,
+                "productCategory": "UT",
+                "fundsAvailable": "false"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

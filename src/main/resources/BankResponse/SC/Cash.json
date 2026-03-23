@@ -1,0 +1,9 @@
+{
+  "balance": 14880,
+  "currency": "SGD",
+  "recentTransactions": [
+    { "date": "2026-03-15", "description": "Cash Deposit", "amount": 1000 },
+    { "date": "2026-02-28", "description": "Fund Redemption", "amount": 5000 }
+  ],
+  "dividendIncome": 2500
+}
