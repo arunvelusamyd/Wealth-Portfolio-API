@@ -77,8 +77,8 @@
             "currencyCode": "SGD",
             "partTrnType": "D",
             "trnStat": "V",
-            "trnParticulars": "PURCH-SU/BO/TB/BS26101E/04726381590148",
-            "trnParticulars2": "TB-BS26101E,APPLN",
+            "trnParticulars": "PURCH-SU/BO/TB/NR59214M/04726381590148",
+            "trnParticulars2": "TB-NR59214M,APPLN",
             "transactionCode": "PURCH"
         },
         {
@@ -155,8 +155,8 @@
             "currencyCode": "SGD",
             "partTrnType": "D",
             "trnStat": "V",
-            "trnParticulars": "PURCH-SU/BO/TB/BS26102F/04726381590148",
-            "trnParticulars2": "TB-BS26102F,APPLN",
+            "trnParticulars": "PURCH-SU/BO/TB/KT71638D/04726381590148",
+            "trnParticulars2": "TB-KT71638D,APPLN",
             "transactionCode": "PURCH"
         },
         {
