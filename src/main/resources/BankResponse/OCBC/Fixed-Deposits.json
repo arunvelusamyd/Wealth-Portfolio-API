@@ -1,0 +1,31 @@
+{
+    "fixedDeposit": {
+        "accounts": [
+            {
+                "accountId": "OCBC-FD-987654",
+                "accountType": "01",
+                "availableBalance": {
+                    "Currency": "SGD",
+                    "balance": "0.00",
+                    "displayBalance": 0.0
+                },
+                "principalBalance": {
+                    "Currency": "SGD",
+                    "balance": "30000.00",
+                    "displayBalance": 30000.00
+                },
+                "displayAccountNumber": "OCBC-987-654",
+                "accountNickname": "OCBC Fixed Deposit",
+                "masterAccountFlag": false,
+                "currency": "SGD",
+                "interestRate": 3.65,
+                "maturityDate": "2026-09-30",
+                "tenorMonths": 12,
+                "cpfIndicator": false,
+                "modeOfOperationCode": "0001",
+                "staffFlag": "N"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

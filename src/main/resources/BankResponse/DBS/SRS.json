@@ -1,0 +1,30 @@
+{
+    "investment": {
+        "accounts": [
+            {
+                "productType": "SRS",
+                "investmentId": "04726381590148",
+                "marketValue": {
+                    "Currency": "SGD",
+                    "currency": "SGD",
+                    "balance": "2183.47",
+                    "displayBalance": 2183.47
+                },
+                "displayAccountNumber": "0472-638159-0-148",
+                "accountNickname": "",
+                "productCode": "0223",
+                "productCodeDescription": "SRS Account",
+                "totalPortFolioValue": {
+                    "Currency": "SGD",
+                    "currency": "SGD",
+                    "balance": "52849.31",
+                    "displayBalance": 52849.31
+                },
+                "jointProductIndicator": false,
+                "productCategory": "SRS",
+                "productBrand": "DBS"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

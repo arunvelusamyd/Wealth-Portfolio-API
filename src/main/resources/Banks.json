@@ -1,0 +1,6 @@
+[
+  { "code": "SC",   "name": "Standard Chartered", "color": "#0099A8", "available": true  },
+  { "code": "UOB",  "name": "United Overseas Bank","color": "#005DAA", "available": true  },
+  { "code": "OCBC", "name": "OCBC Bank",           "color": "#E30613", "available": true  },
+  { "code": "DBS",  "name": "DBS Bank",             "color": "#E50012", "available": true  }
+]

@@ -1,0 +1,26 @@
+{
+    "fixedDeposit": {
+        "accounts": [
+            {
+                "accountId": "0583741629003",
+                "accountType": "01",
+                "availableBalance": {
+                    "Currency": "SGD",
+                    "balance": "0.00",
+                    "displayBalance": 0.0
+                },
+                "principalBalance": {
+                    "Currency": "SGD"
+                },
+                "displayAccountNumber": "0583-74162900-3",
+                "accountNickname": "",
+                "masterAccountFlag": false,
+                "currency": "SGD",
+                "cpfIndicator": false,
+                "modeOfOperationCode": "0001",
+                "staffFlag": "N"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

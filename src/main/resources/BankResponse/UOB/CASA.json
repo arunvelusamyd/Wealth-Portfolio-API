@@ -1,0 +1,48 @@
+{
+    "casa": {
+        "accounts": [
+            {
+                "accountId": "3010123456789",
+                "accountName": "Sample Account Holder",
+                "accountNickname": "UOB One Account",
+                "imageName": "",
+                "accountStatus": "Active",
+                "accountFrozenIndicator": "false",
+                "schemeCode": "2241",
+                "schemeName": "UOB One Account",
+                "accountType": "01",
+                "productCode": "0110",
+                "productCodeDescription": "UOB One Account",
+                "accountOpenedDate": {
+                    "value": "2018-07-23",
+                    "format": "yyyy-MM-dd"
+                },
+                "availableBalance": {
+                    "Currency": "SGD",
+                    "balance": "15432.67",
+                    "domesticCurrencyBalance": "15432.67",
+                    "displayDomesticCurrencyBalance": "15,432.67",
+                    "displayBalance": 15432.67
+                },
+                "baseCurrency": "SGD",
+                "ledgerBalance": {
+                    "Currency": "SGD",
+                    "balance": "15432.67",
+                    "displayBalance": 15432.67
+                },
+                "overdraftLimit": {
+                    "Currency": "SGD",
+                    "balance": "0.00",
+                    "displayBalance": 0.0
+                },
+                "interestRate": 3.85,
+                "multiCurrencyAccountFlag": false,
+                "subProductCode": "11",
+                "jointIndicator": false,
+                "accountSignal": "000000000000000",
+                "displayAccountNumber": "301-012-345-6"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

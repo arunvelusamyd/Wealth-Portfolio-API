@@ -1,0 +1,47 @@
+{
+    "casa": {
+        "accounts": [
+            {
+                "accountId": "09385724610058",
+                "accountName": "Sample Account Holder",
+                "accountNickname": "My savings account",
+                "imageName": "",
+                "accountStatus": "Active",
+                "accountFrozenIndicator": "false",
+                "schemeCode": "1162",
+                "schemeName": "POSB Everyday Savings Account",
+                "accountType": "57",
+                "productCode": "0082",
+                "productCodeDescription": "POSB Everyday Savings Account",
+                "accountOpenedDate": {
+                    "value": "2011-04-17",
+                    "format": "yyyy-MM-dd"
+                },
+                "availableBalance": {
+                    "Currency": "SGD",
+                    "balance": "6839.21",
+                    "domesticCurrencyBalance": "6839.21",
+                    "displayDomesticCurrencyBalance": "9,847.53",
+                    "displayBalance": 6839.21
+                },
+                "baseCurrency": "SGD",
+                "ledgerBalance": {
+                    "Currency": "SGD",
+                    "balance": "6839.28",
+                    "displayBalance": 6839.28
+                },
+                "overdraftLimit": {
+                    "Currency": "SGD",
+                    "balance": "0.00",
+                    "displayBalance": 0.0
+                },
+                "multiCurrencyAccountFlag": false,
+                "subProductCode": "27",
+                "jointIndicator": false,
+                "accountSignal": "000000000000000",
+                "displayAccountNumber": "847-29163-5"
+            }
+        ],
+        "status": "SUCCESS"
+    }
+}

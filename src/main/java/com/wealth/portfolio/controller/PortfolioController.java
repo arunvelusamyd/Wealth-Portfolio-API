@@ -31,4 +31,39 @@ public class PortfolioController {
         JsonNode json = objectMapper.readTree(inputStream);
         return ResponseEntity.ok(json);
     }
+
+    @GetMapping(value = "/cash", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<JsonNode> getCash() throws IOException {
+        InputStream inputStream = new ClassPathResource("Cash.json").getInputStream();
+        JsonNode json = objectMapper.readTree(inputStream);
+        return ResponseEntity.ok(json);
+    }
+
+    @GetMapping(value = "/performance", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<JsonNode> getPerformance() throws IOException {
+        InputStream inputStream = new ClassPathResource("Performance.json").getInputStream();
+        JsonNode json = objectMapper.readTree(inputStream);
+        return ResponseEntity.ok(json);
+    }
+
+    @GetMapping(value = "/cpf", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<JsonNode> getCpf() throws IOException {
+        InputStream inputStream = new ClassPathResource("Cpf.json").getInputStream();
+        JsonNode json = objectMapper.readTree(inputStream);
+        return ResponseEntity.ok(json);
+    }
+
+    @GetMapping(value = "/srs", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<JsonNode> getSrs() throws IOException {
+        InputStream inputStream = new ClassPathResource("Srs.json").getInputStream();
+        JsonNode json = objectMapper.readTree(inputStream);
+        return ResponseEntity.ok(json);
+    }
+
+    @GetMapping(value = "/news", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<JsonNode> getNews() throws IOException {
+        InputStream inputStream = new ClassPathResource("News.json").getInputStream();
+        JsonNode json = objectMapper.readTree(inputStream);
+        return ResponseEntity.ok(json);
+    }
 }
