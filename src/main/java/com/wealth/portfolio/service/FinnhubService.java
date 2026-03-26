@@ -1,5 +1,6 @@
 package com.wealth.portfolio.service;
 
+import com.wealth.portfolio.dto.StockFundamentalsResponse;
 import com.wealth.portfolio.dto.StockQuoteResponse;
 import com.wealth.portfolio.dto.TickerSearchResult;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,6 +18,7 @@ public class FinnhubService {
 
     private static final String FINNHUB_QUOTE_URL   = "https://finnhub.io/api/v1/quote";
     private static final String FINNHUB_SEARCH_URL  = "https://finnhub.io/api/v1/search";
+    private static final String FINNHUB_METRICS_URL = "https://finnhub.io/api/v1/stock/metric";
 
     private final RestTemplate restTemplate;
     private final String apiKey;
@@ -77,6 +79,48 @@ public class FinnhubService {
                 .filter(r -> !r.getSymbol().isEmpty())
                 .limit(10)
                 .collect(Collectors.toList());
+    }
+
+    @SuppressWarnings("unchecked")
+    public StockFundamentalsResponse getFundamentals(String symbol) {
+        String url = UriComponentsBuilder.fromHttpUrl(FINNHUB_METRICS_URL)
+                .queryParam("symbol", symbol.toUpperCase())
+                .queryParam("metric", "all")
+                .queryParam("token", apiKey)
+                .toUriString();
+
+        Map<String, Object> raw = restTemplate.getForObject(url, Map.class);
+        if (raw == null || !raw.containsKey("metric")) {
+            return new StockFundamentalsResponse(symbol.toUpperCase(),
+                    null, null, null, null, null, null, null, null, null, null, null);
+        }
+
+        Map<String, Object> m = (Map<String, Object>) raw.get("metric");
+
+        Double pe    = metricDouble(m, "peNormalizedAnnual");
+        Double pb    = metricDouble(m, "ptbvAnnual");
+        Double divY  = metricDouble(m, "dividendYieldIndicatedAnnual");
+        Double npm   = metricDouble(m, "netMarginTTM");
+
+        Double eps   = metricDouble(m, "epsAnnual");
+        Double bvps  = metricDouble(m, "bookValuePerShareAnnual");
+        Double ebv   = (eps != null && bvps != null && bvps != 0) ? eps / bvps : null;
+
+        Double epsGrowth = metricDouble(m, "epsGrowth5Y");
+        Double peg   = (pe != null && epsGrowth != null && epsGrowth > 0) ? pe / epsGrowth : null;
+
+        Double cr    = metricDouble(m, "currentRatioAnnual");
+        Double roe   = metricDouble(m, "roeTTM");
+        Double roce  = metricDouble(m, "roicTTM");
+
+        return new StockFundamentalsResponse(symbol.toUpperCase(),
+                pe, pb, divY, npm, ebv, peg, cr, null, null, roe, roce);
+    }
+
+    private Double metricDouble(Map<String, Object> map, String key) {
+        Object val = map.get(key);
+        if (val instanceof Number) return ((Number) val).doubleValue();
+        return null;
     }
 
     private double toDouble(Object value) {

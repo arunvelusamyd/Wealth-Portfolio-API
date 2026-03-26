@@ -1,5 +1,6 @@
 package com.wealth.portfolio.controller;
 
+import com.wealth.portfolio.dto.StockFundamentalsResponse;
 import com.wealth.portfolio.dto.StockQuoteResponse;
 import com.wealth.portfolio.dto.TickerSearchResult;
 import com.wealth.portfolio.service.FinnhubService;
@@ -26,6 +27,11 @@ public class StockPriceController {
     public ResponseEntity<StockQuoteResponse> getStockPrice(@PathVariable String symbol) {
         StockQuoteResponse quote = finnhubService.getStockQuote(symbol);
         return ResponseEntity.ok(quote);
+    }
+
+    @GetMapping("/{symbol}/fundamentals")
+    public ResponseEntity<StockFundamentalsResponse> getFundamentals(@PathVariable String symbol) {
+        return ResponseEntity.ok(finnhubService.getFundamentals(symbol));
     }
 
     @GetMapping("/search")
