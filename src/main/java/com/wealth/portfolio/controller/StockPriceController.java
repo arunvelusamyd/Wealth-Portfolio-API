@@ -2,6 +2,7 @@ package com.wealth.portfolio.controller;
 
 import com.wealth.portfolio.dto.StockFundamentalsResponse;
 import com.wealth.portfolio.dto.StockQuoteResponse;
+import com.wealth.portfolio.dto.TechnicalAnalysisResponse;
 import com.wealth.portfolio.dto.TickerSearchResult;
 import com.wealth.portfolio.service.FinnhubService;
 import org.springframework.http.ResponseEntity;
@@ -32,6 +33,13 @@ public class StockPriceController {
     @GetMapping("/{symbol}/fundamentals")
     public ResponseEntity<StockFundamentalsResponse> getFundamentals(@PathVariable String symbol) {
         return ResponseEntity.ok(finnhubService.getFundamentals(symbol));
+    }
+
+    @GetMapping("/{symbol}/technical")
+    public ResponseEntity<TechnicalAnalysisResponse> getTechnicalAnalysis(
+            @PathVariable String symbol,
+            @RequestParam(defaultValue = "D") String resolution) {
+        return ResponseEntity.ok(finnhubService.getTechnicalAnalysis(symbol, resolution));
     }
 
     @GetMapping("/search")
