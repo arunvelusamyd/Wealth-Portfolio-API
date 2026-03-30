@@ -29,6 +29,7 @@ public class SecurityConfig {
             http
                 .authorizeHttpRequests(auth -> auth
                     .requestMatchers("/ws/**").permitAll()
+                    .requestMatchers("/mcp/**").permitAll()
                     .requestMatchers("/api/portfolio/**").authenticated()
                     .requestMatchers("/api/banks/**").authenticated()
                     .requestMatchers("/api/chat").authenticated()

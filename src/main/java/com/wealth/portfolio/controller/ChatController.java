@@ -3,6 +3,7 @@ package com.wealth.portfolio.controller;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.wealth.portfolio.dto.ChatRequest;
 import com.wealth.portfolio.dto.ChatResponse;
+import com.wealth.portfolio.mcp.PortfolioMcpTools;
 import com.wealth.portfolio.service.ClaudeService;
 import com.wealth.portfolio.service.PortfolioContextService;
 import org.springframework.http.ResponseEntity;
@@ -18,19 +19,33 @@ import java.time.LocalDate;
 public class ChatController {
 
     private final PortfolioContextService portfolioContextService;
-    private final ClaudeService claudeService;
+    private final ClaudeService           claudeService;
+    private final PortfolioMcpTools       mcpTools;
 
-    public ChatController(PortfolioContextService portfolioContextService, ClaudeService claudeService) {
+    public ChatController(PortfolioContextService portfolioContextService,
+                          ClaudeService claudeService,
+                          PortfolioMcpTools mcpTools) {
         this.portfolioContextService = portfolioContextService;
-        this.claudeService = claudeService;
+        this.claudeService           = claudeService;
+        this.mcpTools                = mcpTools;
     }
 
     @PostMapping
     public ResponseEntity<ChatResponse> chat(@RequestBody ChatRequest request) {
         try {
-            String tab = request.getTab() != null ? request.getTab() : "Portfolio Overview";
-            String systemPrompt = buildSystemPrompt(tab, request.getTabContext());
-            String reply = claudeService.chat(systemPrompt, request.getMessage());
+            String tab   = request.getTab() != null ? request.getTab() : "Portfolio Overview";
+            String reply = switch (tab) {
+                // Tool-enabled tabs: Claude fetches live data on demand via tool calling
+                case "Portfolio Overview",
+                     "Technical Analysis",
+                     "Fundamentals"    -> claudeService.chatWithTools(toolSystemPrompt(tab), request.getMessage(), mcpTools);
+
+                // Context-injected tabs: data comes from frontend localStorage
+                case "Watchlist"      -> claudeService.chat(buildWatchlistPrompt(request.getTabContext()),     request.getMessage());
+                case "Subscriptions"  -> claudeService.chat(buildSubscriptionsPrompt(request.getTabContext()), request.getMessage());
+
+                default               -> claudeService.chatWithTools(toolSystemPrompt("Portfolio Overview"), request.getMessage(), mcpTools);
+            };
             return ResponseEntity.ok(new ChatResponse(reply));
         } catch (Exception e) {
             return ResponseEntity.internalServerError()
@@ -38,27 +53,33 @@ public class ChatController {
         }
     }
 
-    // ── System prompt builders ──────────────────────────────────────────────────
+    // ── Tool-enabled system prompts (Claude fetches what it needs) ───────────────
 
-    private String buildSystemPrompt(String tab, JsonNode tabContext) throws Exception {
+    private String toolSystemPrompt(String tab) {
         return switch (tab) {
-            case "Watchlist"      -> buildWatchlistPrompt(tabContext);
-            case "Subscriptions"  -> buildSubscriptionsPrompt(tabContext);
-            case "Fundamentals"   -> buildFundamentalsPrompt(tabContext);
-            default               -> buildPortfolioPrompt();
+            case "Technical Analysis" -> """
+                    You are a technical analysis assistant for the Wealth Dashboard.
+                    Use get_technical_analysis to fetch support/resistance levels and RSI for any stock the user asks about.
+                    Use get_stock_quote for a quick price check. Use search_stock if the user gives a company name instead of a ticker.
+                    Be concise and actionable. Explain what the levels mean for the user's trading decisions.
+                    """;
+            case "Fundamentals" -> """
+                    You are a fundamental analysis assistant for the Wealth Dashboard.
+                    Use get_stock_fundamentals to retrieve metrics for any stock the user mentions.
+                    Use search_stock if you need to find a ticker from a company name.
+                    Compare metrics against benchmarks (PE < 15 good; ROE ≥ 15% good; etc.) and give clear investment insights.
+                    """;
+            default -> """
+                    You are a personal wealth management assistant for the Wealth Dashboard.
+                    Use get_portfolio_summary to retrieve the user's holdings before answering portfolio questions.
+                    Use get_stock_quote or get_technical_analysis for market data questions.
+                    Use get_stock_fundamentals for fundamental analysis. Use search_stock to find tickers by company name.
+                    Be concise, accurate, and helpful.
+                    """;
         };
     }
 
-    private String buildPortfolioPrompt() throws Exception {
-        String portfolioContext = portfolioContextService.buildPortfolioContext();
-        return """
-                You are a personal wealth management assistant. You have access to the user's
-                current investment portfolio listed below. Answer questions accurately using only
-                the data provided. Be concise and helpful. If a question cannot be answered from
-                the portfolio data alone, say so clearly rather than guessing.
-
-                """ + portfolioContext;
-    }
+    // ── Context-injected prompts (data from frontend localStorage) ───────────────
 
     private String buildWatchlistPrompt(JsonNode tabContext) {
         StringBuilder sb = new StringBuilder();
@@ -94,11 +115,11 @@ public class ChatController {
     }
 
     private String buildSubscriptionsPrompt(JsonNode tabContext) {
-        LocalDate today      = LocalDate.now();
-        int dayOfMonth       = today.getDayOfMonth();
-        LocalDate weekEnd    = today.plusDays(6);
-        boolean sameMonth    = weekEnd.getMonthValue() == today.getMonthValue();
-        int weekEndDay       = weekEnd.getDayOfMonth();
+        LocalDate today    = LocalDate.now();
+        int dayOfMonth     = today.getDayOfMonth();
+        LocalDate weekEnd  = today.plusDays(6);
+        boolean sameMonth  = weekEnd.getMonthValue() == today.getMonthValue();
+        int weekEndDay     = weekEnd.getDayOfMonth();
 
         StringBuilder sb = new StringBuilder();
         sb.append("You are a personal finance assistant focused on the user's subscriptions and scheduled payments.\n");
@@ -108,7 +129,7 @@ public class ChatController {
         if (sameMonth) {
             sb.append(String.format("This week covers billing days %d – %d of this month.%n%n", dayOfMonth, weekEndDay));
         } else {
-            sb.append(String.format("This week spans the end of this month (from day %d) and the start of next month (until day %d).%n%n",
+            sb.append(String.format("This week spans the end of this month (day %d+) and the start of next month (until day %d).%n%n",
                     dayOfMonth, weekEndDay));
         }
 
@@ -144,66 +165,5 @@ public class ChatController {
                 """, dayOfMonth, sameMonth ? weekEndDay : 31, dayOfMonth));
 
         return sb.toString();
-    }
-
-    private String buildFundamentalsPrompt(JsonNode tabContext) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("You are a financial analysis assistant focused on stock fundamental analysis.\n\n");
-
-        if (tabContext != null && tabContext.has("stocks")) {
-            JsonNode stocks = tabContext.get("stocks");
-            if (stocks.isArray() && !stocks.isEmpty()) {
-                for (JsonNode stock : stocks) {
-                    String symbol = stock.path("symbol").asText("Unknown");
-                    sb.append("## ").append(symbol).append("\n");
-                    appendMetric(sb, "PE Ratio",              stock, "peRatio",               false);
-                    appendMetric(sb, "P/B Ratio",             stock, "pbRatio",               false);
-                    appendMetric(sb, "Dividend Yield",        stock, "dividendYield",         true);
-                    appendMetric(sb, "Net Profit Margin",     stock, "netProfitMargin",       true);
-                    appendMetric(sb, "Earnings/Book Value",   stock, "earningsToBookValue",   false);
-                    appendMetric(sb, "PEG Ratio",             stock, "pegRatio",              false);
-                    appendMetric(sb, "Current Ratio",         stock, "currentRatio",          false);
-                    appendMetric(sb, "Working Capital/Debt",  stock, "workingCapitalToDebt",  false);
-                    appendMetric(sb, "Net Current Asset/Debt",stock, "netCurrentAssetToDebt", false);
-                    appendMetric(sb, "ROE",                   stock, "roe",                   true);
-                    appendMetric(sb, "ROCE",                  stock, "roce",                  true);
-                    sb.append("\n");
-                }
-            } else {
-                sb.append("No stock fundamentals data is loaded. Ask the user to search for a stock in the Fundamentals tab first.\n\n");
-            }
-        } else {
-            sb.append("No stock fundamentals data is loaded. The user needs to search for a stock in the Fundamentals tab first.\n\n");
-        }
-
-        sb.append("""
-                Benchmark reference:
-                - PE Ratio: < 15 Good, < 25 Moderate, ≥ 25 Poor
-                - P/B Ratio: < 1.5 Good, < 3 Moderate, ≥ 3 Poor
-                - Dividend Yield: ≥ 3% Good, ≥ 1% Moderate, < 1% Poor
-                - Net Profit Margin: ≥ 20% Good, ≥ 10% Moderate, < 10% Poor
-                - Earnings/Book Value: ≥ 1.5 Good, ≥ 0.5 Moderate, < 0.5 Poor
-                - PEG Ratio: < 1 Good, < 2 Moderate, ≥ 2 Poor
-                - Current Ratio: ≥ 2 Good, ≥ 1 Moderate, < 1 Poor
-                - ROE: ≥ 15% Good, ≥ 8% Moderate, < 8% Poor
-                - ROCE: ≥ 15% Good, ≥ 8% Moderate, < 8% Poor
-
-                Answer questions about these metrics, compare stocks if two are loaded, and provide
-                investment insights based on the data. N/A means data was unavailable from the source.
-                Be concise and helpful.
-                """);
-
-        return sb.toString();
-    }
-
-    private void appendMetric(StringBuilder sb, String label, JsonNode stock, String key, boolean isPercent) {
-        JsonNode val = stock.get(key);
-        if (val == null || val.isNull()) {
-            sb.append(String.format("- %s: N/A%n", label));
-        } else {
-            double d = val.asDouble();
-            String formatted = isPercent ? String.format("%.2f%%", d) : String.format("%.2f", d);
-            sb.append(String.format("- %s: %s%n", label, formatted));
-        }
     }
 }
