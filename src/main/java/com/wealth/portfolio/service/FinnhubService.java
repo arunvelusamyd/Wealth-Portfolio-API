@@ -1,6 +1,7 @@
 package com.wealth.portfolio.service;
 
 import com.wealth.portfolio.dto.StockFundamentalsResponse;
+import com.wealth.portfolio.dto.StockHistoryResponse;
 import com.wealth.portfolio.dto.StockQuoteResponse;
 import com.wealth.portfolio.dto.TechnicalAnalysisResponse;
 import com.wealth.portfolio.dto.TickerSearchResult;
@@ -10,6 +11,9 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -25,6 +29,7 @@ public class FinnhubService {
     private static final String FINNHUB_METRICS_URL   = "https://finnhub.io/api/v1/stock/metric";
     private static final String FINNHUB_SR_URL        = "https://finnhub.io/api/v1/scan/support-resistance";
     private static final String FINNHUB_INDICATOR_URL = "https://finnhub.io/api/v1/indicator";
+    private static final String FINNHUB_CANDLE_URL    = "https://finnhub.io/api/v1/stock/candle";
 
     private final RestTemplate restTemplate;
     private final String apiKey;
@@ -201,6 +206,78 @@ public class FinnhubService {
                 rsiSignal,
                 res
         );
+    }
+
+    // ── Price history (candle data) ───────────────────────────────────────────────
+
+    public StockHistoryResponse getStockHistory(String symbol, String period) {
+        LocalDate today = LocalDate.now();
+
+        // Determine date range and candle resolution for each period
+        LocalDate from;
+        String resolution;
+        switch (period) {
+            case "5D"  -> { from = today.minusDays(10);  resolution = "D"; }  // extra days for weekends
+            case "1M"  -> { from = today.minusDays(35);  resolution = "D"; }
+            case "1Y"  -> { from = today.minusDays(370); resolution = "D"; }
+            case "5Y"  -> { from = today.minusDays(1830); resolution = "W"; }
+            default    -> { from = LocalDate.of(today.getYear(), 1, 1); resolution = "D"; } // YTD
+        }
+
+        long fromUnix = from.atStartOfDay(ZoneOffset.UTC).toEpochSecond();
+        long toUnix   = today.atTime(23, 59, 59).toEpochSecond(ZoneOffset.UTC);
+
+        String url = UriComponentsBuilder.fromHttpUrl(FINNHUB_CANDLE_URL)
+                .queryParam("symbol",     symbol)
+                .queryParam("resolution", resolution)
+                .queryParam("from",       fromUnix)
+                .queryParam("to",         toUnix)
+                .queryParam("token",      apiKey)
+                .toUriString();
+
+        String raw = restTemplate.getForObject(url, String.class);
+
+        try {
+            com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+            com.fasterxml.jackson.databind.JsonNode root = mapper.readTree(raw);
+
+            if (!"ok".equals(root.path("s").asText(""))) {
+                throw new IllegalArgumentException("No candle data for symbol: " + symbol);
+            }
+
+            com.fasterxml.jackson.databind.JsonNode closes = root.get("c");
+            com.fasterxml.jackson.databind.JsonNode times  = root.get("t");
+
+            DateTimeFormatter labelFmt = "5Y".equals(period)
+                    ? DateTimeFormatter.ofPattern("MMM ''yy")
+                    : DateTimeFormatter.ofPattern("MMM d");
+
+            List<String> labels = new ArrayList<>();
+            List<Double> prices = new ArrayList<>();
+
+            int limit = "5D".equals(period) ? 5 : closes.size(); // keep last 5 for 5D
+            int start = Math.max(0, closes.size() - limit);
+
+            for (int i = start; i < closes.size(); i++) {
+                long ts = times.get(i).asLong();
+                LocalDate date = Instant.ofEpochSecond(ts).atZone(ZoneOffset.UTC).toLocalDate();
+                labels.add(date.format(labelFmt));
+                prices.add(closes.get(i).asDouble());
+            }
+
+            double firstPrice    = prices.isEmpty() ? 0 : prices.get(0);
+            double lastPrice     = prices.isEmpty() ? 0 : prices.get(prices.size() - 1);
+            double changeAmount  = lastPrice - firstPrice;
+            double changePercent = firstPrice != 0 ? (changeAmount / firstPrice) * 100 : 0;
+
+            return new StockHistoryResponse(symbol, period, labels, prices,
+                    firstPrice, lastPrice, changeAmount, changePercent);
+
+        } catch (IllegalArgumentException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to parse candle data for " + symbol + ": " + e.getMessage(), e);
+        }
     }
 
     private Double metricDouble(Map<String, Object> map, String key) {

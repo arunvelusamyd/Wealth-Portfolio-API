@@ -1,6 +1,7 @@
 package com.wealth.portfolio.controller;
 
 import com.wealth.portfolio.dto.StockFundamentalsResponse;
+import com.wealth.portfolio.dto.StockHistoryResponse;
 import com.wealth.portfolio.dto.StockQuoteResponse;
 import com.wealth.portfolio.dto.TechnicalAnalysisResponse;
 import com.wealth.portfolio.dto.TickerSearchResult;
@@ -40,6 +41,13 @@ public class StockPriceController {
             @PathVariable String symbol,
             @RequestParam(defaultValue = "D") String resolution) {
         return ResponseEntity.ok(finnhubService.getTechnicalAnalysis(symbol, resolution));
+    }
+
+    @GetMapping("/{symbol}/history")
+    public ResponseEntity<StockHistoryResponse> getStockHistory(
+            @PathVariable String symbol,
+            @RequestParam(defaultValue = "YTD") String period) {
+        return ResponseEntity.ok(finnhubService.getStockHistory(symbol.toUpperCase(), period));
     }
 
     @GetMapping("/search")
